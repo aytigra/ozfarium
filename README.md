@@ -2,13 +2,13 @@
 
   Best OzFa gallery ever created
 
-## Install basic dependencies
+## Install basic dependencies (Ubuntu/Debian)
 
   `sudo apt update`
 
   `sudo apt install -y build-essential inotify-tools curl wget git libssh-dev`
 
-## Install PostgreSQL
+## Install PostgreSQL (Ubuntu/Debian)
 
   `sudo apt install postgresql postgresql-contrib`
 
@@ -18,13 +18,13 @@
 
   `sudo service postgresql restart`
 
-## Install Image processing dependencies
+## Install PostgreSQL (MacOS)
 
-  `sudo apt install -y libjpeg-turbo-progs libglib2.0-dev expat libexif-dev libpng-dev libvips-dev cargo`
+  `brew install postgresql@14`
 
-  `export PATH="$PATH:~/.cargo/bin"`
+  `brew services start postgresql@14`
 
-  `cargo install oxipng`
+  `createuser postgres --interactive`
 
 ## Install Asdf
 
